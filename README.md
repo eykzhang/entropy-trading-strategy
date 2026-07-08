@@ -24,7 +24,7 @@ This implementation is based on:
 > **Entropy-Assisted Quality Pattern Identification in Finance**
 > arXiv:2503.06251 (2025)
 
-The paper proposes using entropy as an information-theoretic measure to identify high-quality trading patterns by balancing information gain and historical profitability. Rather than relying solely on clustering methods like K-Means or Gaussian Mixture Models, the approach removes ambiguous patterns and retains those with both low entropy and historically consistent outcomes.  [oai_citation:1‡2503.06251v1.pdf](sediment://file_00000000b468720c9e0626cb2fa8c2e7)
+The paper proposes using entropy as an information-theoretic measure to identify high-quality trading patterns by balancing information gain and historical profitability. Rather than relying solely on clustering methods like K-Means or Gaussian Mixture Models, the approach removes ambiguous patterns and retains those with both low entropy and historically consistent outcomes.
 
 ---
 
@@ -188,7 +188,7 @@ Potential extensions include:
 
 Gupta, R., Gupta, S., Singh, J., & Kais, S.
 **Entropy-Assisted Quality Pattern Identification in Finance.**
-arXiv:2503.06251, 2025.  [oai_citation:2‡2503.06251v1.pdf](sediment://file_00000000b468720c9e0626cb2fa8c2e7)
+arXiv:2503.06251, 2025.
 
 ---
 
