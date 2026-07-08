@@ -1,0 +1,68 @@
+2025-07-23 19:16:37 | INFO     | data_handler.py:11 | DataHandler initialized
+2025-07-23 19:16:37 | INFO     | alpaca_client.py:13 | Alpaca client connected
+2025-07-23 19:16:37 | INFO     | trading_strategy.py:11 | TradingStrategy initialized
+2025-07-23 19:18:28 | INFO     | data_handler.py:11 | DataHandler initialized
+2025-07-23 19:18:28 | INFO     | alpaca_client.py:13 | Alpaca client connected
+2025-07-23 19:18:28 | INFO     | trading_strategy.py:11 | TradingStrategy initialized
+2025-07-23 21:36:18 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-23 21:36:18 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-23 21:36:18 | trading_bot  | INFO     | DataHandler initialized
+2025-07-23 21:36:18 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-23 21:36:19 | trading_bot  | INFO     | Retrieved 0 bars for GOLD
+2025-07-23 21:36:19 | trading_bot  | CRITICAL | Strategy failed: 'close_price'
+Traceback (most recent call last):
+  File "/opt/miniconda3/envs/alpaca-env/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3812, in get_loc
+    return self._engine.get_loc(casted_key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pandas/_libs/index.pyx", line 167, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 196, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7088, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 7096, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'close_price'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/edward/Projects/money-bot/src/main.py", line 16, in main
+    strategy.run(symbol)
+  File "/Users/edward/Projects/money-bot/src/trading_strategy.py", line 47, in run
+    buy_raw, sell_raw = self.dh.detect_swings(ohlc)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edward/Projects/money-bot/src/data_handler.py", line 23, in detect_swings
+    returns = ohlc['close_price'].pct_change(Config.PATTERN_WINDOW)
+              ~~~~^^^^^^^^^^^^^^^
+  File "/opt/miniconda3/envs/alpaca-env/lib/python3.11/site-packages/pandas/core/frame.py", line 4107, in __getitem__
+    indexer = self.columns.get_loc(key)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/miniconda3/envs/alpaca-env/lib/python3.11/site-packages/pandas/core/indexes/base.py", line 3819, in get_loc
+    raise KeyError(key) from err
+KeyError: 'close_price'
+2025-07-23 21:44:35 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-23 21:44:35 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-23 21:44:35 | trading_bot  | INFO     | DataHandler initialized
+2025-07-23 21:44:35 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-23 21:44:35 | trading_bot  | WARNING  | No data returned for GOLD 1Hour
+2025-07-23 21:44:35 | trading_bot  | ERROR    | Failed to fetch OHLC data: name 'pd' is not defined
+2025-07-23 21:44:35 | trading_bot  | ERROR    | Strategy execution failed: name 'pd' is not defined
+Traceback (most recent call last):
+  File "/Users/edward/Projects/money-bot/src/alpaca_client.py", line 19, in get_ohlc
+    return pd.DataFrame()
+           ^^
+NameError: name 'pd' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/edward/Projects/money-bot/src/trading_strategy.py", line 45, in run
+    ohlc = self.alpaca.get_ohlc(symbol, Config.TIME_FRAME)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/edward/Projects/money-bot/src/alpaca_client.py", line 41, in get_ohlc
+    return pd.DataFrame()
+           ^^
+NameError: name 'pd' is not defined
+2025-07-23 21:44:59 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-23 21:44:59 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-23 21:44:59 | trading_bot  | INFO     | DataHandler initialized
+2025-07-23 21:44:59 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-23 21:44:59 | trading_bot  | WARNING  | No data returned for GOLD 1Hour
+2025-07-23 21:44:59 | trading_bot  | WARNING  | No data available for GOLD

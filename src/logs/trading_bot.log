@@ -1,0 +1,32 @@
+2025-07-29 11:26:38 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-29 11:26:38 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-29 11:26:38 | trading_bot  | INFO     | DataHandler initialized
+2025-07-29 11:26:38 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-29 11:26:39 | trading_bot  | WARNING  | No data returned for GOLD 1Hour
+2025-07-29 11:26:39 | trading_bot  | WARNING  | No data available for GOLD
+2025-07-29 11:27:13 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-29 11:27:13 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-29 11:27:13 | trading_bot  | INFO     | DataHandler initialized
+2025-07-29 11:27:13 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-29 11:27:13 | trading_bot  | ERROR    | Failed to fetch OHLC data: Missing required column: open_price
+2025-07-29 11:27:13 | trading_bot  | WARNING  | No data available for TSLA
+2025-07-29 11:27:39 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-29 11:27:39 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-29 11:27:39 | trading_bot  | INFO     | DataHandler initialized
+2025-07-29 11:27:39 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-29 11:27:40 | trading_bot  | ERROR    | Failed to fetch OHLC data: Missing required column: open_price
+2025-07-29 11:27:40 | trading_bot  | WARNING  | No data available for AAPL
+2025-07-29 11:39:22 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-29 11:39:22 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-29 11:39:22 | trading_bot  | INFO     | DataHandler initialized
+2025-07-29 11:39:22 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-29 11:39:22 | trading_bot  | INFO     | Running strategy for AAPL
+2025-07-29 11:39:22 | trading_bot  | INFO     | Successfully retrieved 30 bars for AAPL
+2025-07-29 11:39:22 | trading_bot  | WARNING  | Skipping AAPL - insufficient data (30 bars)
+2025-07-29 12:59:16 | trading_bot  | INFO     | Starting entropy trading bot
+2025-07-29 12:59:16 | trading_bot  | INFO     | Alpaca client initialized
+2025-07-29 12:59:16 | trading_bot  | INFO     | DataHandler initialized
+2025-07-29 12:59:16 | trading_bot  | INFO     | TradingStrategy initialized
+2025-07-29 12:59:16 | trading_bot  | INFO     | Running strategy for SPY
+2025-07-29 12:59:16 | trading_bot  | INFO     | Successfully retrieved 35 bars for SPY
+2025-07-29 12:59:16 | trading_bot  | WARNING  | Skipping SPY - insufficient data (35 bars)
